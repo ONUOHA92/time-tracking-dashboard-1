@@ -49,10 +49,6 @@
       color: #BBC0FF;
     }
 
-    .container {
-      margin: 1.5rem;
-    }
-
     @media only screen and (min-width: 720px) {
       body {
         display: flex;
@@ -60,26 +56,12 @@
         justify-content: center;
         min-height: 100vh;
       }
-
-      .container {
-        /* margin: 0 auto; */
-        width: 1110px;
-      }
-
-      .container my-page {
-        display: grid;
-        grid-template-columns: 3fr 9fr;
-        grid-template-rows: auto;
-        gap: 2rem;
-      }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
-    <my-page></my-page>
-  </main>
+  <my-page></my-page>
 </body>
 
 </html>
