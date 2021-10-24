@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+:root {
+    --white: #fff;
+    --text: #BBC0FF;
+    --profile: #5747EA;
+    --card: #1C204B;
+    --link: #7078C9;
+    --radius: 15px;
+    --work: url("/src/images/icon-work.svg");
+    --play: url("/src/images/icon-play.svg");
+    --study: url("/src/images/icon-study.svg");
+    --exercise: url("/src/images/icon-exercise.svg");
+    --social: url("/src/images/icon-social.svg");
+    --self-care: url("/src/images/icon-self-care.svg");
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #0E1323;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #BBC0FF;
+}
+
+.container {
+    margin: 1.5rem;
+}
+
+@media only screen and (min-width: 720px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        grid-template-rows: auto;
+        gap: 30px;
+        width: 1110px;
+        margin: 0 auto;
+    }
+}
