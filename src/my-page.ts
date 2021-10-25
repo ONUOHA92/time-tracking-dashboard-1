@@ -205,3 +205,8 @@ export class MyPage extends LitElement {
     `
   }
 }
+declare global {
+  interface HTMLElementTagNameMap {
+    'my-page': MyPage
+  }
+}
