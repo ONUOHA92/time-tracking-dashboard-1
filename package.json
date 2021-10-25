@@ -1,9 +1,9 @@
 {
   "name": "time-tracking-dashboard",
   "version": "0.0.0",
-  "main": "dist/time-tracking-dashboard.es.js",
+  "main": "dist/my-page.es.js",
   "exports": {
-    ".": "./dist/time-tracking-dashboard.es.js"
+    ".": "./dist/my-page.es.js"
   },
   "types": "types/my-page.d.ts",
   "files": [
