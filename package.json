@@ -5,7 +5,7 @@
   "exports": {
     ".": "./dist/time-tracking-dashboard.es.js"
   },
-  "types": "types/time-tracking-dashboard.d.ts",
+  "types": "types/my-page.d.ts",
   "files": [
     "dist",
     "types"
