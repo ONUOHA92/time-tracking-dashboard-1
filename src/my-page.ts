@@ -16,19 +16,26 @@ import jeremy from "../assets/images/image-jeremy.png";
 @customElement('my-page')
 export class MyPage extends LitElement {
   static styles = css `
+    :host *,
+    :host *::before,
+    :host *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     .user {
       margin-bottom: 1.5rem;
       height: 100%;
-      color: #fff;
+      color: var(--white);
       border-radius: 15px;
-      background-color: #1C204B;
+      background-color: var(--card);
     }
     .user__top {
       display: flex;
       align-items: center;
       gap: 1.25rem;
       border-radius: var(--radius);
-      background-color: #5747EA;
+      background-color: var(--profile);
     }
     .user__avatar {
       margin: 0;
@@ -45,10 +52,9 @@ export class MyPage extends LitElement {
     .text {
       font-size: 1rem;
       font-weight: 400;
-      color: #BBC0FF;
+      color: var(--text);
     }  
     .user__name {
-      // font-size: 2.6rem;
       font-size: 1.5rem;
       font-weight: 300;
     }
@@ -66,7 +72,7 @@ export class MyPage extends LitElement {
       border: 0;
     }
     .user__footer li {
-      flex: 1 1 0px;
+      flex: 1 1 0;
       text-align: center;
     }
     .user__footer li button {
@@ -92,7 +98,7 @@ export class MyPage extends LitElement {
         max-width: 1110px;
       }
       .user {
-        width: 255px;
+        width: 17rem;
         margin-bottom: 0;
       }
       .user__top {

@@ -10,14 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     html {
       font-size: 15px;
     }
@@ -29,12 +21,6 @@
       --card: #1C204B;
       --link: #7078C9;
       --radius: 15px;
-      --work: url("assets/images/icon-work.svg");
-      --play: url("assets/images/icon-play.svg");
-      --study: url("assets/images/icon-study.svg");
-      --exercise: url("assets/images/icon-exercise.svg");
-      --social: url("assets/images/icon-social.svg");
-      --self-care: url("assets/images/icon-self-care.svg");
     }
 
     body {
@@ -42,13 +28,7 @@
       background-color: #0E1323;
     }
 
-    .text {
-      font-size: 1rem;
-      font-weight: 400;
-      color: #BBC0FF;
-    }
-
-    @media only screen and (min-width: 720px) {
+    @media (min-width: 48rem) {
       body {
         display: flex;
         align-items: center;

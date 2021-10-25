@@ -1,25 +1,38 @@
-import { html, css, LitElement } from 'lit'
+import { html, css, unsafeCSS, LitElement } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import ellipsis from "../assets/images/icon-ellipsis.svg"
+import work from "../assets/images/icon-work.svg";
+import play from "../assets/images/icon-play.svg";
+import study from "../assets/images/icon-study.svg";
+import exercise from "../assets/images/icon-exercise.svg";
+import social from "../assets/images/icon-social.svg";
+import self from "../assets/images/icon-self-care.svg";
 
 @customElement('report-card')
 export class ReportCard extends LitElement {
 
   static styles = css`
+    :host *,
+    :host *::before,
+    :host *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     section {
       display: grid;
       gap: 1.5rem;
     }
     .report-card {
       cursor: pointer;
-      margin-top: 38px;
+      margin-top: 2.6rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       display: grid;
       justify-items: stretch;
       padding: 1.6rem 1.5rem;
       position: relative;
-      color: #fff;
+      color: var(--white);
       border-radius: var(--radius);
       background-color: #1C204B;
       transition: background-color 400ms ease-in-out;
@@ -29,7 +42,7 @@ export class ReportCard extends LitElement {
     }
     .report-card__options {
       cursor: pointer;
-      color: #BBC0FF;
+      color: var(--text);
       font-size: 2rem;
       text-align: right;
       border: 0;
@@ -38,7 +51,7 @@ export class ReportCard extends LitElement {
     .text {
       font-size: 1rem;
       font-weight: 400;
-      color: #BBC0FF;
+      color: var(--text);
     }
     .report-card::before {
       content: "";
@@ -54,22 +67,22 @@ export class ReportCard extends LitElement {
       background-position: right top;
     }
     .report-card--work::before {
-      background-image: var(--work);
+      background-image: url(${unsafeCSS(work)});
     }
     .report-card--play::before {
-      background-image: var(--play);
+      background-image: url(${unsafeCSS(play)});
     }
     .report-card--study::before {
-      background-image: var(--study);
+      background-image: url(${unsafeCSS(study)});
     }
     .report-card--exercise::before {
-      background-image: var(--exercise);
+      background-image: url(${unsafeCSS(exercise)});
     }
     .report-card--social::before {
-      background-image: var(--social);
+      background-image: url(${unsafeCSS(social)});
     }
     .report-card--self::before {
-      background-image: var(--self-care);
+      background-image: url(${unsafeCSS(self)});
     }
     .report-card__title {
       font-size: 1.2rem;
@@ -83,7 +96,7 @@ export class ReportCard extends LitElement {
       text-align: right;
       align-self: flex-end;
     }
-    @media only screen and (min-width: 48rem) {
+    @media (min-width: 48rem) {
       section {
         gap: 1.5rem;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
@@ -151,7 +164,7 @@ export class ReportCard extends LitElement {
               <strong class="report-card__title">${item.title}</strong>
               <button class="report-card__options"><img src="${ellipsis}" aria-hidden="true"/></button>
               <h2 class="report-card__current">${item.timeframes[this.timeframe].current} hrs</h2>
-              <p class="report-card__previous">Last ${short} - ${item.timeframes[this.timeframe].previous} hrs</p>
+              <p class="report-card__previous text">Last ${short} - ${item.timeframes[this.timeframe].previous} hrs</p>
             </article>
           `
         })}
