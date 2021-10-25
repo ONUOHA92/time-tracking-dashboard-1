@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://ccreusat-time-tracking-dashboard.vercel.app/desktop-preview.jpg)
+![](https://ccreusat-time-tracking-dashboard.vercel.app/assets/desktop-preview.jpg)
 
 ### Links
 
