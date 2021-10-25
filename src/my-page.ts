@@ -146,7 +146,7 @@ export class MyPage extends LitElement {
     { text: 'Monthly' }
   ];
 
-  _fetchData = (url: string = "../data.json") => {
+  _fetchData = (url: string = "assets/data.json") => {
     fetch(url)
       .then((response: any) => {
         if (!response.ok) {
@@ -173,7 +173,7 @@ export class MyPage extends LitElement {
         <aside class="user">
           <div class="user__top">
             <figure class="user__avatar">
-              <img src="../images/${this.user.image_src}" alt="photo of ${this.user.name}" />
+              <img src="assets/images/${this.user.image_src}" alt="photo of ${this.user.name}" />
             </figure>
             <div class="user__intro">
               <span class="user__report text">Report for</span>
