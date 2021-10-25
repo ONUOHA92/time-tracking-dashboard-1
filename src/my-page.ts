@@ -122,16 +122,10 @@ export class MyPage extends LitElement {
     super.disconnectedCallback();
   }
 
-  /* @property({
-    hasChanged(newVal: string[]) {
-      const hasChanged: boolean = newVal.length > 0;
-      return hasChanged;
-    }
-  }) */
-  @property()
+  @property({type: Array})
   data: string[] = [];
 
-  @property()
+  @property({type: Object})
   user = {
     name: "Jeremy Robson",
     image_src: "image-jeremy.png"
@@ -152,7 +146,7 @@ export class MyPage extends LitElement {
     { text: 'Monthly' }
   ];
 
-  _fetchData = (url: string = "./src/data.json") => {
+  _fetchData = (url: string = "../data.json") => {
     fetch(url)
       .then((response: any) => {
         if (!response.ok) {
@@ -179,7 +173,7 @@ export class MyPage extends LitElement {
         <aside class="user">
           <div class="user__top">
             <figure class="user__avatar">
-              <img src="./src/images/${this.user.image_src}" alt="photo of ${this.user.name}" />
+              <img src="../images/${this.user.image_src}" alt="photo of ${this.user.name}" />
             </figure>
             <div class="user__intro">
               <span class="user__report text">Report for</span>

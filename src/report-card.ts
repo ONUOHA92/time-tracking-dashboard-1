@@ -147,7 +147,7 @@ export class ReportCard extends LitElement {
           return html`
             <article key=${index} class="report-card report-card--${item.title.toLocaleLowerCase()}" style="--color:${this.colors[index]}">
               <strong class="report-card__title">${item.title}</strong>
-              <button class="report-card__options"><img src="/src/images/icon-ellipsis.svg" aria-hidden="true"/></button>
+              <button class="report-card__options"><img src="../images/icon-ellipsis.svg" aria-hidden="true"/></button>
               <h2 class="report-card__current">${item.timeframes[this.timeframe].current} hrs</h2>
               <p class="report-card__previous">Last ${short} - ${item.timeframes[this.timeframe].previous} hrs</p>
             </article>
