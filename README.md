@@ -11,10 +11,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 ## Overview
 
 ### The challenge
@@ -27,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://ccreusat-time-tracking-dashboard.vercel.app/assets/images/desktop-preview.jpg)
+![](./assets/images/desktop-preview.jpg)
 
 ### Links
 
 - Solution URL: [Solution Page](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://ccreusat-time-tracking-dashboard.vercel.app/)
 
 ## My process
 
