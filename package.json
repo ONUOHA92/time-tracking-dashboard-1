@@ -1,5 +1,5 @@
 {
-  "name": "time-tracking-dashboard",
+  "name": "my-page",
   "version": "0.0.0",
   "main": "dist/my-page.es.js",
   "exports": {
