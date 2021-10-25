@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Page](https://your-solution-url.com)
+- Solution URL: [Solution Page](https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-vite-and-lit-elements-8lc6CRcQT)
 - Live Site URL: [Live site](https://ccreusat-time-tracking-dashboard.vercel.app/)
 
 ## My process
