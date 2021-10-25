@@ -179,7 +179,7 @@ export class MyPage extends LitElement {
         <aside class="user">
           <div class="user__top">
             <figure class="user__avatar">
-              <img src="src/images/${this.user.image_src}" alt="photo of ${this.user.name}" />
+              <img src="./src/images/${this.user.image_src}" alt="photo of ${this.user.name}" />
             </figure>
             <div class="user__intro">
               <span class="user__report text">Report for</span>
