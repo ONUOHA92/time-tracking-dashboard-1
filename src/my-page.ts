@@ -10,6 +10,8 @@ import {
 
 import './user-card';
 import './report-card';
+// import dataJSON from './src/data.json';
+import jeremy from "../assets/images/image-jeremy.png";
 
 @customElement('my-page')
 export class MyPage extends LitElement {
@@ -128,7 +130,7 @@ export class MyPage extends LitElement {
   @property({type: Object})
   user = {
     name: "Jeremy Robson",
-    image_src: "image-jeremy.png"
+    image_src: jeremy
   }
   short: string = "test";
   
@@ -146,7 +148,7 @@ export class MyPage extends LitElement {
     { text: 'Monthly' }
   ];
 
-  _fetchData = (url: string = "assets/data.json") => {
+  _fetchData = (url: string = "https://api.jsonbin.io/b/61769bdd4a82881d6c653e63") => {
     fetch(url)
       .then((response: any) => {
         if (!response.ok) {
@@ -173,7 +175,7 @@ export class MyPage extends LitElement {
         <aside class="user">
           <div class="user__top">
             <figure class="user__avatar">
-              <img src="assets/images/${this.user.image_src}" alt="photo of ${this.user.name}" />
+              <img src="${this.user.image_src}" alt="photo of ${this.user.name}" />
             </figure>
             <div class="user__intro">
               <span class="user__report text">Report for</span>
