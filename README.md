@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://ccreusat-time-tracking-dashboard.vercel.app/desktop-preview.jpg)
 
 ### Links
 
